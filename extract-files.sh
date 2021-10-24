@@ -54,6 +54,23 @@ function blob_fixup() {
         product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml|product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
             sed -i 's/version="2.0"/version="1.0"/g' "${2}"
             ;;
+        vendor/lib64/hw/android.hardware.audio@4.0-impl.so)
+            ;&
+        vendor/lib64/hw/android.hardware.audio@5.0-impl.so)
+            ;&
+        vendor/lib64/hw/android.hardware.audio@6.0-impl.so)
+            ;&
+        vendor/lib64/hw/android.hardware.audio@2.0-impl.so)
+            ;&
+        vendor/lib/hw/android.hardware.audio@4.0-impl.so)
+            ;&
+        vendor/lib/hw/android.hardware.audio@5.0-impl.so)
+            ;&
+        vendor/lib/hw/android.hardware.audio@6.0-impl.so)
+            ;&
+        vendor/lib/hw/android.hardware.audio@2.0-impl.so)
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
+            ;;
     esac
 }
 
