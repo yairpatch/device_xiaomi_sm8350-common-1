@@ -575,8 +575,5 @@
           specified name exists on the device, autofill will be disabled by default.
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
-
-    <!-- this device supports smart charging -->
-    <bool name="config_smartChargingVisibility">true</bool>
 	
 </resources>
