@@ -75,7 +75,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 515
 TARGET_USES_HWC2 := true
 
 # Filesystem
