@@ -305,6 +305,10 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM8350
+
 # Wifi
 wifi.aware.interface=wifi-aware0
 ro.vendor.net.enable_dual_wifi=1
